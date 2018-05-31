@@ -216,7 +216,7 @@ class CreateProjectActivity : AppCompatActivity() {
     }
 
 
-    private fun createInventory(name:String)
+    public fun createInventory(name:String)
     {
         var db = DataBaseHelper(this)
         db.openDataBase()

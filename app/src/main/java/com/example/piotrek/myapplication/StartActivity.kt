@@ -44,14 +44,6 @@ class StartActivity : AppCompatActivity() {
         db.createDataBase()
         db.openDataBase()
 
-        for (i :Int in 1..10)
-        {
-            val values = ContentValues()
-            values.put("Name", "Project Name$i")
-            values.put("Active", i%2)
-            values.put("LastAccessed", i%4)
-            db.writableDatabase.insert("Inventories", null, values)
-        }
         db.close()
         getData()
 
