@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="114dp"
-        android:layout_height="100dp"
+        android:layout_width="145dp"
+        android:layout_height="132dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,31 +48,31 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/circle_button_minus"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_buton"
         android:onClick="OnMinusClicked"
-        android:text="-"
+        android:text="Remove"
         android:textColor="#FFFFFF"
-        android:textSize="35sp"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="140dp"
+        android:layout_height="52dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/circle_button_plus"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_buton"
         android:onClick="OnPlusClicked"
-        android:text="+"
+        android:text="Add"
         android:textColor="#FFFFFF"
-        android:textSize="35sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
         android:id="@+id/waitLabel"

@@ -1,4 +1,4 @@
-package com.example.piotrek.myapplication
+package com.example.makasz.myapplication
 
 import android.content.ContentValues
 import android.support.v7.app.AppCompatActivity

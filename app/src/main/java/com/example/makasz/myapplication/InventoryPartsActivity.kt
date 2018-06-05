@@ -1,4 +1,4 @@
-package com.example.piotrek.myapplication
+package com.example.makasz.myapplication
 
 import android.content.ContentValues
 import android.content.Context
@@ -156,7 +156,7 @@ class InventoryPartsActivity : AppCompatActivity() {
                     LinearLayout.LayoutParams.MATCH_PARENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT)
             layout.setPadding(0, 50, 0, 50)
-            layout.background = ContextCompat.getDrawable(this, R.drawable.border)
+            layout.background = ContextCompat.getDrawable(this, R.drawable.rounded_buton)
             val quantityLabel = TextView(this)
             quantityLabel.text = Items[i]["QuantityInStore"] + "/" + Items[i]["QuantityInSet"]
             quantityLabel.gravity = Gravity.CENTER
@@ -181,7 +181,6 @@ class InventoryPartsActivity : AppCompatActivity() {
             layout.addView(codeLabel)
 
             if (i == selectedItem) {
-
                 if (Images[Items[i]["ItemKey"]] != null) {
                     imageView.setImageBitmap(Images[Items[i]["ItemKey"]])
                 } else {
@@ -272,7 +271,7 @@ class InventoryPartsActivity : AppCompatActivity() {
                         if (cursorImage.getBlob(cursorImage.getColumnIndex("Image")) != null) {
                             val image = cursorImage.getBlob(cursorImage.getColumnIndex("Image"))
                             val bmp = BitmapFactory.decodeByteArray(image, 0, image.size)
-                            val scaledBmp = Bitmap.createScaledBitmap(bmp, 250, 250, false)
+                            val scaledBmp = Bitmap.createScaledBitmap(bmp, 350, 350, false)
                             Images[i.toString()] = scaledBmp
                         }
 
